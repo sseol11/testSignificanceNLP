@@ -151,7 +151,7 @@ def main():
                 else:
                     name = answer2
         else:
-            answer = raw_input("\nThe normal test is not significant, would you like to perform a non-parametric test for checking significance of difference between results? (Y\N) ")
+            #answer = raw_input("\nThe normal test is not significant, would you like to perform a non-parametric test for checking significance of difference between results? (Y\N) ")
             if (answer == 'Y'):
                 answer2 = raw_input("\nWhich test (Permutation or Bootstrap)? ")
                 name = answer2
