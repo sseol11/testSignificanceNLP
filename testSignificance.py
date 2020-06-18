@@ -131,7 +131,7 @@ def main():
         output = normality_check(data_A, data_B, name, alpha)
 
         if(float(output)>float(alpha)):
-            answer = raw_input("\nThe normal test is significant, would you like to perform a t-test for checking significance of difference between results? (Y\N) ")
+            #answer = raw_input("\nThe normal test is significant, would you like to perform a t-test for checking significance of difference between results? (Y\N) ")
             if(answer=='Y'):
                 # two sided t-test
                 t_results = stats.ttest_rel(data_A, data_B)
