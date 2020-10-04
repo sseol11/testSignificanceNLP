@@ -98,7 +98,8 @@ def Bootstrap(data_A, data_B, n, R):
             temp_B.append(data_B[samp])
         delta = float(sum([x - y for x, y in zip(temp_A, temp_B)])) / n
 #         if (delta < 2*delta_orig):
-        if (delta > 2*delta_orig):
+#         if (delta > 2*delta_orig):
+        if (delta < 0):
             r = r + 1
     pval = float(r)/(R)
     return pval
